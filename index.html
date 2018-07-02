@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <title>JQuery - Exercice 2</title>
+</head>
+<body>
+  <form>
+    <label for="text">Nombre de clics : </label><input type="text" name="text" id="text" />
+    <button type="button" name="button" id="add">+</button>
+    <button type="button" name="button" id="subtract">-</button>
+  </form>
+  <script src="assets/js/jquery-3.2.1.js"></script>
+  <script>
+  // Déclaration de la variable qui sert de compteur
+  var counter = 0;
+  // Ajoute 1 au compteur counter et affiche sa valeur
+  $('#add').click(function() {
+    counter++;
+    $('#text').val(counter);
+  });
+  // Soustrait 1 au compteur counter et affiche sa valeur
+  $('#subtract').click(function() {
+    counter--;
+    $('#text').val(counter);
+  });
+  </script>
+</body>
+</html>
